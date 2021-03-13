@@ -25,12 +25,12 @@ class Category(models.Model):
 class Expenses(NameUserMixin, models.Model):
     amount = models.PositiveIntegerField(help_text='coma as decimal separator')
     category = models.ForeignKey(Category, on_delete=models.PROTECT)
-    timestamp = models.DateTimeField(default=datetime.now())
+    timestamp = models.DateField(auto_now=False)
 
 
 class Income(NameUserMixin, models.Model):
     amount = models.PositiveIntegerField(help_text='coma as decimal separator')
-    timestamp = models.DateTimeField(default=datetime.now())
+    timestamp = models.DateField(auto_now=False)
 
 
 
