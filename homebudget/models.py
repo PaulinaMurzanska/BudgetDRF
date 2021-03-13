@@ -1,6 +1,6 @@
 from django.db import models
 from django.conf import settings
-from datetime import datetime, date
+from datetime import datetime
 
 
 class NameUserMixin(models.Model):
@@ -25,13 +25,12 @@ class Category(models.Model):
 class Expenses(NameUserMixin, models.Model):
     amount = models.PositiveIntegerField(help_text='coma as decimal separator')
     category = models.ForeignKey(Category, on_delete=models.PROTECT)
-    timestamp = models.DateField(auto_now_add=False,auto_now=False, blank=False)
+    timestamp = models.DateTimeField()
 
 
 class Income(NameUserMixin, models.Model):
     amount = models.PositiveIntegerField(help_text='coma as decimal separator')
-    timestamp = models.DateField(auto_now_add=False, auto_now=False, blank=False)
-
+    timestamp = models.DateTimeField()
 
 
 
