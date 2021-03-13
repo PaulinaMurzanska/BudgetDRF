@@ -23,13 +23,13 @@ class Category(models.Model):
 
 
 class Expenses(NameUserMixin, models.Model):
-    amount = models.DecimalField(max_digits=15, decimal_places=2)
+    amount = models.FloatField()
     category = models.ForeignKey(Category, on_delete=models.PROTECT)
     timestamp = models.DateField()
 
 
 class Income(NameUserMixin, models.Model):
-    amount = models.DecimalField(max_digits=15, decimal_places=2)
+    amount = models.FloatField()
     timestamp = models.DateField()
 
 
