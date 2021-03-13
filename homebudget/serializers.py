@@ -20,7 +20,7 @@ class CategorySerializer(AdminCategorySerializer):
 
 
 class AdminExpensesSerializer(serializers.ModelSerializer):
-    timestamp = serializers.DateField(format="%d-%m-%Y", input_formats=['%d-%m-%Y', 'iso-8601'])
+
 
     class Meta:
         model = Expenses
@@ -40,7 +40,7 @@ class ExpensesSerializer(AdminExpensesSerializer):
 
 
 class AdminIncomeSerializer(serializers.ModelSerializer):
-    timestamp = serializers.DateField(format="%d-%m-%Y", input_formats=['%d-%m-%Y', 'iso-8601'])
+
 
     class Meta:
         model = Income
