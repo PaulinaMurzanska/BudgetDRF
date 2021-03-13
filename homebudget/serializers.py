@@ -1,5 +1,5 @@
 from django.contrib.auth.models import User
-from rest_framework import serializers, fields
+from rest_framework import serializers
 from django.contrib.auth import get_user_model
 from .models import (Category, Expenses, Income)
 
@@ -20,7 +20,7 @@ class CategorySerializer(AdminCategorySerializer):
 
 
 class AdminExpensesSerializer(serializers.ModelSerializer):
-    timestamp = fields.DateField(format="%d-%m-%Y", input_formats=['%d-%m-%Y', 'iso-8601'])
+
 
     class Meta:
         model = Expenses
@@ -40,7 +40,7 @@ class ExpensesSerializer(AdminExpensesSerializer):
 
 
 class AdminIncomeSerializer(serializers.ModelSerializer):
-    timestamp = fields.DateField(format="%d-%m-%Y", input_formats=['%d-%m-%Y', 'iso-8601'])
+
 
     class Meta:
         model = Income
