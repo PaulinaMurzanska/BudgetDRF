@@ -115,7 +115,7 @@ AUTH_PASSWORD_VALIDATORS = [
 
 LANGUAGE_CODE = 'en-us'
 
-TIME_ZONE = 'GMT'
+TIME_ZONE = 'UTC'
 
 USE_I18N = True
 
@@ -141,5 +141,6 @@ REST_FRAMEWORK = {
         "rest_framework.authentication.TokenAuthentication",
         # "rest_framework.authentication.BasicAuthentication",
     ],
+    # "DATE_INPUT_FORMATS": ['iso-8601', '%Y-%m-%dT%%H:%M:%S.%fZ'],
 }
 CORS_ALLOW_ALL_ORIGINS = True
