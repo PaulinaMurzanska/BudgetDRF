@@ -1,0 +1,21 @@
+.container {
+    border: 1px solid red;
+    padding: 10px;
+}
+.container .logo-title-section{
+    border: 2px solid blue;
+    text-align: center;
+}
+.container .logo-title-section p{
+     text-transform: uppercase;
+      color: red;
+      font-size: 2rem;
+      font-family: Roboto, sans-serif;
+      letter-spacing: 1px;
+
+}
+@media screen and (max-width: 850px){
+    .container .logo-title-section p{
+        color:blue;
+    }
+}
