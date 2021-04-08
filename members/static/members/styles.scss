@@ -78,6 +78,11 @@ body {
         color: $projectNavyColor;
         font-size: 1.3rem;
         margin-bottom: 10px;
+        @media(max-width: 500px) {
+          font-size: 1rem;
+          margin-bottom: 5px;
+
+        }
       }
 
       input {
@@ -109,8 +114,8 @@ body {
         letter-spacing: 1px;
         border-radius: 4px;
         font-size: 1.3rem;
-        @media(max-width: 500px){
-                  padding: 10px;
+        @media(max-width: 500px) {
+          padding: 10px;
         }
 
         &:hover {
