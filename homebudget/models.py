@@ -1,6 +1,6 @@
 from django.db import models
 from django.conf import settings
-# import datetime
+import datetime
 
 
 class NameUserMixin(models.Model):
@@ -25,12 +25,12 @@ class Category(models.Model):
 class Expenses(NameUserMixin, models.Model):
     amount = models.FloatField()
     category = models.ForeignKey(Category, on_delete=models.PROTECT)
-    timestamp = models.DateField()
+    timestamp = models.DateField(("Date"), default=datetime.date.today)
 
 
 class Income(NameUserMixin, models.Model):
     amount = models.FloatField()
-    timestamp = models.DateField()
+    timestamp = models.DateField(("Date"), default=datetime.date.today)
 
 
 
