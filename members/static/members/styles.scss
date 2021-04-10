@@ -129,4 +129,20 @@ body {
       }
     }
   }
+  .sign-in{
+    text-align: center;
+    button{
+      padding: 20px;
+      border: none;
+      background-color:  $projectOrangeColor;
+      color: $projectNavyColor;
+      width: 200px;
+      text-transform: uppercase;
+      font-size:1.5rem ;
+      &:hover{
+        color: white;
+      }
+
+    }
+  }
 }
