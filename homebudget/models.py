@@ -25,12 +25,12 @@ class Category(models.Model):
 class Expenses(NameUserMixin, models.Model):
     amount = models.FloatField()
     category = models.ForeignKey(Category, on_delete=models.PROTECT)
-    timestamp = models.DateField()
+    timestamp = models.DateTimeField()
 
 
 class Income(NameUserMixin, models.Model):
     amount = models.FloatField()
-    timestamp = models.DateField()
+    timestamp = models.DateTimeField()
 
 
 
