@@ -29,7 +29,7 @@ body {
           .container .logo-title-section .image img {
             transform: scale(1); } }
   .container .form-section {
-    padding: 20px 20%; }
+    padding: 5px 20%; }
     @media (max-width: 500px) {
       .container .form-section {
         padding: 20px;
