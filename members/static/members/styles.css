@@ -42,7 +42,8 @@ body {
       font-weight: bolder; }
     .container .form-section form {
       display: flex;
-      flex-direction: column; }
+      flex-direction: column;
+      margin-bottom: 10px; }
       .container .form-section form br {
         display: none; }
       .container .form-section form ul, .container .form-section form span {
