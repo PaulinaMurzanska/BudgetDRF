@@ -34,6 +34,12 @@ body {
       .container .form-section {
         padding: 20px;
         font-family: Roboto, sans-serif; } }
+    .container .form-section a {
+      font-size: 12px;
+      margin-top: 10px;
+      color: rgba(231, 130, 0, 0.91);
+      text-transform: uppercase;
+      font-weight: bolder; }
     .container .form-section form {
       display: flex;
       flex-direction: column; }
